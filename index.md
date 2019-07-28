@@ -14,9 +14,9 @@ A boardgame for the world.
 Players play as governments competing for the prosperity of their country. The country with the happiest citizens at the end of the game wins.
 
 As a country, you can:
-* Trade or steal with neighboring countries
-* Attack each other
-* Invest in new technologies, which open up more and more _"oportunities"_
+* Trade with or steal from neighboring countries
+* Attack other countries
+* Invest in new technologies to open up more "oportunities"
 * Use civilization specific abilities
 
 
