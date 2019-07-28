@@ -1,2 +1,18 @@
 @import "jekyll-theme-midnight";
 
+.tradesteal {
+	text-align: center;
+}
+
+.attack-field {
+	float: right;
+}
+
+.row {
+	display: flex;
+	width: 100%;
+}
+
+.column {
+	flex: 50%;
+}
