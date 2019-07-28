@@ -5,14 +5,21 @@
 }
 
 .attack-field {
-	float: right;
+	width: 40px;
 }
 
 .row {
+	margin: 0 auto;
 	display: flex;
 	width: 100%;
 }
 
 .column {
 	flex: 50%;
+}
+
+.centered-text {
+	margin: 0 auto;
+	width: 100px;
+	text-align: center;
 }
