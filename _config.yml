@@ -1,0 +1,20 @@
+theme: jekyll-theme-midnight
+plugins:
+  - jekyll-relative-links
+
+# this
+collections:
+  headers:
+    output: true
+
+# this
+relative_links:
+  enabled: true
+  collections: true
+
+# apply theme to sub folders
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

@@ -1,0 +1,19 @@
+
+install Jekyll:
+https://jekyllrb.com/docs/installation/
+
+setup Jekyll with github pages:
+https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll
+
+localhost:
+cd to repo
+bundle exec jekyll serve
+
+jekyll guide:
+https://jekyllrb.com/docs/variables/
+
+markdown:
+https://en.support.wordpress.com/markdown-quick-reference/
+
+theme examples:
+https://pages-themes.github.io/midnight/

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		{% seo %}
+		<link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+		<script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="/assets/css/styles.css">
+	</head>
+	<body>
+		<div id="header">
+			<nav style="background-color: transparent;">
+				<li><a href="{{ 'index.html' }}">Home</a></li>
+				<li><a href="{{ site.url | append: '/headers/rules.html' }}">Rules</a></li>
+				<li><a href="{{ site.url | append: '/headers/example.html' }}">Examples</a></li>
+			</nav>
+		</div>
+		<div class="wrapper">
+			<section>
+				{{ content }}
+			</section>
+		</div>
+	</body>
+</html>
