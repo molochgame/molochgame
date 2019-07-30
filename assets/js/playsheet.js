@@ -10,7 +10,7 @@ function submit() {
 
 	var outputDiv = document.getElementById('output');
 
-	outputDiv.innerHTML = addTurnHeader(currentTurn) + "content" + doubleNewline() + outputDiv.innerHTML;
+	outputDiv.innerHTML = getTurnHeader(currentTurn) + getContent() + getDoubleNewline() + outputDiv.innerHTML;
 
 	updateTurn(parseInt(currentTurn)+1);
 }
@@ -25,11 +25,33 @@ function updateTurn(turn) {
 	document.getElementById("turn-counter").value = turn;
 }
 
-function doubleNewline() {
+function getTurnHeader(turn) {
+	return "<div class='turnHeader'>" + "Turn " + turn + " actions:" + "</div>";
+}
+
+function getContent() {
+	let left = document.getElementById("left-trade").value;
+	let right = document.getElementById("right-trade").value;
+	let tradeSteal = "[" + left + "," + right + "]"
+
+	let attacks = "";
+	attacks += getPlayerAttacks("-");
+	attacks += getPlayerAttacks("+");
+
+	return tradeSteal + attacks;
+}
+
+function getDoubleNewline() {
 	return "<br><br>"
 }
 
-function addTurnHeader(turn) {
-	return "Turn " + turn + ":<br>";
+function getPlayerAttacks(side) {
+	attacks = ""
+	for(let i=1; i<=6; i++) {
+		let val = document.getElementById("p" + side + i).value;
+		if(parseInt(val)) {
+			attacks += "<br>P" + side + i + " ["+ val +"]"
+		}
+	}
+	return attacks;
 }
-

@@ -11,20 +11,20 @@ title: Playsheet
 
 <div class="row">
 	<div class="column">
-		<input class="attack-field-l" type="number" name="p-6" min="0" max="9">
-		<input class="attack-field-l" type="number" name="p-6" min="0" max="9">
-		<input class="attack-field-l" type="number" name="p-6" min="0" max="9">
-		<input class="attack-field-l" type="number" name="p-6" min="0" max="9">
-		<input class="attack-field-l" type="number" name="p-6" min="0" max="9">
-		<input class="attack-field-l" type="number" name="p-6" min="0" max="9">
+		<input class="attack-field-l" type="number" id="p-1" min="0" max="9">
+		<input class="attack-field-l" type="number" id="p-2" min="0" max="9">
+		<input class="attack-field-l" type="number" id="p-3" min="0" max="9">
+		<input class="attack-field-l" type="number" id="p-4" min="0" max="9">
+		<input class="attack-field-l" type="number" id="p-5" min="0" max="9">
+		<input class="attack-field-l" type="number" id="p-6" min="0" max="9">
 	</div>
 	<div class="column">
-		<input class="attack-field-r" type="number" name="p-6" min="0" max="9">
-		<input class="attack-field-r" type="number" name="p-6" min="0" max="9">
-		<input class="attack-field-r" type="number" name="p-6" min="0" max="9">
-		<input class="attack-field-r" type="number" name="p-6" min="0" max="9">
-		<input class="attack-field-r" type="number" name="p-6" min="0" max="9">
-		<input class="attack-field-r" type="number" name="p-6" min="0" max="9">
+		<input class="attack-field-r" type="number" id="p+1" min="0" max="9">
+		<input class="attack-field-r" type="number" id="p+2" min="0" max="9">
+		<input class="attack-field-r" type="number" id="p+3" min="0" max="9">
+		<input class="attack-field-r" type="number" id="p+4" min="0" max="9">
+		<input class="attack-field-r" type="number" id="p+5" min="0" max="9">
+		<input class="attack-field-r" type="number" id="p+6" min="0" max="9">
 	</div>
 </div>
 <br>
@@ -38,17 +38,17 @@ title: Playsheet
 	<div class="column">
 		<div style="float: right">
 			Left
-			<select name="" >  
-				<option value="0"> Steal 
-				<option value="1"> Trade
+			<select id="left-trade">  
+				<option value="Steal"> Steal
+				<option value="Trade"> Trade
 			</select>
 		</div>
 	</div>
 	<div class="column">
 		<div style="float: left">
-			<select name="" >  
-				<option value="0"> Steal 
-				<option value="1"> Trade
+			<select id="right-trade">  
+				<option value="Steal"> Steal
+				<option value="Trade"> Trade
 			</select>
 			Right
 		</div>
