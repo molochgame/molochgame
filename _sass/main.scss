@@ -5,23 +5,21 @@
 }
 
 .attack-field-l {
-	width: 10%;
+	width: 15%;
 	float: right;
 }
 
 .attack-field-r {
-	width: 10%;
+	width: 15%;
 	float: left;
 }
 
 .row {
-	margin: 0 auto;
-	display: flex;
 	width: 100%;
 }
 
 .column {
-	flex: 50%;
+	width: 50%;
 }
 
 .centered-text {
