@@ -2,6 +2,7 @@
 title: Playsheet
 ---
 
+<script src='{{ site.url | append: "/assets/js/playsheet.js" }}'></script>
 
 <div class="centered-text">
 	Attacks
@@ -34,7 +35,6 @@ title: Playsheet
 <br>
 
 <div class="row">
-
 	<div class="column">
 		<div style="float: right">
 			Left
@@ -55,5 +55,15 @@ title: Playsheet
 	</div>
 </div>
 <br>
+<br>
 
+<div class="centered-text">
+	<button onclick="submit()">Submit</button>
+	For Turn:
+	<input class="turn" type="number" id="turn-counter" min="1" max="500" value=1 oninput="onUserUpdateTurn()">
+</div>
+
+<div class="row" id="output">
+
+</div>
 
